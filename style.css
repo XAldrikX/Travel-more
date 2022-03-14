@@ -415,6 +415,10 @@ li {
     .container-header {
         width: 100%;
     }
+    
+    .submit-btn{
+        width: 25%;
+    }
 
     .main-content {
         padding: 0 150px ;
