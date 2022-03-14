@@ -1,0 +1,432 @@
+/*Regras gerais*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fs-h1: 1.75rem;
+    --fs-h2: 1.75rem;
+    --fs-h3: 1.1rem;
+    --fs-body: .9rem;
+
+    --clr-red: #f04237;
+    --clr-salmon: #f28e86;
+    --clr-gray: #626262;
+    --clr-lightGray: #f1f1f1;
+}
+
+html {
+    background-color: var(--clr-lightGray);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--fs-body);
+    height: 100vh;
+    font-weight: 300;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.main-content {
+    padding: 20px 15px;
+    background-color: var(--clr-lightGray);
+}
+
+/*Tipografia*/
+
+h1 {
+    font-size: var(--fs-h1);
+    font-weight: 400;
+}
+
+h2 {
+    font-size: var(--fs-h2);
+    font-weight: 300;
+}
+
+h3 {
+    font-size: var(--fs-h3);
+    font-weight: 300;
+}
+
+/* Header */
+
+header {
+    background-color: #FFF;
+}
+
+.logo {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.logo > i {
+    margin-right: 10px;
+    font-size: 1.3rem;
+    color: var(--clr-red);
+}
+
+.logo > h1 {
+    font-size: 1.3rem;
+    color: var(--clr-red);
+    font-weight: 500;
+}
+
+.lupa > i {
+    font-size: 1.3rem;
+    color: var(--clr-gray);
+}
+
+.container-header {
+    
+    padding: 10px 10px;
+}
+
+.container-header-inside {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-icons-form {
+    display: flex;
+    color: #FFF;
+    background-color: black;
+}
+
+.selected {
+    background-color: var(--clr-red);
+}
+
+.plane,
+.hotel,
+.car {
+    display: flex;
+    padding: 10px 10px;
+    margin-right: 15px;
+}
+
+.plane > i,
+.hotel > i,
+.car > i {
+    margin-right: 15px;
+}
+
+.container-content-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-content-form > h2, form {
+    margin: 20px 15px;
+    margin-bottom: 0;
+}
+
+.container-content-form > form, input {
+    display: block;
+    width: calc(100% - 15px);
+}
+
+.input-form {
+    height: 35px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+
+/* Offers */
+
+.container-offers > h2 {
+    margin: 0;
+    margin-top: 30px;
+}
+
+.container-offers > p {
+    margin: 15px 0;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.img-grid {
+    position: relative;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+
+}
+
+/* Explore */
+
+.container-explore > h2 {
+    margin: 25px 0;
+}
+
+.container-explore > p {
+    margin-bottom: 15px;
+}
+
+.flex-explore {
+    display: flex;
+    flex-direction: column;
+}
+
+.explore-element {
+    background-color: #FFF;
+    margin-bottom: 15px;
+}
+
+.explore-element > img {
+    margin: 0;
+}
+
+.explore-element > * {
+    margin: 15px 10px;
+}
+
+.explore-element > h3 {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.explore-element > :nth-child(3){
+    color: var(--clr-gray)
+}
+
+.explore-element > :nth-child(5) {
+    margin-left: 30px;
+}
+
+/* Newsletter */
+
+.container-newsletter {
+    background-color: var(--clr-gray);
+    color: #FFF;
+    padding: 20px 20px 5px;
+}
+
+.container-newsletter > * {
+    margin: 15px 0;
+}
+
+#user-email > :nth-child(1) {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+}
+
+/* Footer */
+
+footer {
+    padding: 0 15px;
+    background-color: var(--clr-lightGray);
+}
+
+.container-contacts > h3 {
+    font-size: 1.8rem;
+}
+
+.container-contacts > p {
+    margin: 10px 0;
+}
+
+.fa-li {
+    margin-left: -13px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+.form-contact {
+    margin: 15px 0;
+}
+
+.form-contact > label > input {
+    margin: 15px 0;
+    height: 50px;
+    padding: 10px;
+}
+
+.container-socialmedias {
+    text-align: center;
+    color: var(--clr-gray);
+}
+
+.container-socialmedias > * {
+    margin: 30px
+}
+
+.media-icons > i {
+    
+    font-size: 1.3rem;
+}
+
+/* Botōes */
+
+.submit-btn {
+    width: 40%;
+    height: 35px;
+    border: none;
+    color: #FFF;
+    background-color: var(--clr-gray);
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+    background-color: lightgray;
+    color: black;
+}
+
+.submit-btn-contact {
+    width: 40%;
+    border: none;
+    background-color: #000;
+    color: #FFF;
+    padding: 15px 25px;
+    text-transform: uppercase;
+}
+
+.submit-btn-contact:hover,
+.submit-btn-contact:focus {
+    background-color: gray;
+    color: black;
+}
+
+.submit-btn-newsletter {
+    margin-top: 15px;
+    margin-bottom: 0;
+    border: none;
+    width: 30%;
+    background-color: var(--clr-salmon);
+    color: #FFF;
+    padding: 10px 15px;
+}
+
+.submit-btn-newsletter:hover,
+.submit-btn-newsletter:focus {
+    background-color: #FFF;
+    color: var(--clr-salmon)
+}
+
+/* Media queries */
+
+@media (min-width: 750px) {
+    
+    /* Header */
+
+    .background-image {
+        background-image: url(./imagens/london.jpg);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 50vh;
+        padding: 55px 0;
+    }
+
+    .container-header {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .container-header-form {
+        background-color: #FFF;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .flex-form {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .flex-form > label {
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .flex-form > label > input {
+        width: 95%;
+    }
+
+    .container-icons-form {
+        justify-content: space-between;
+    }
+
+    .plane,
+    .hotel,
+    .car {
+        width: 33%;
+        justify-content: center;
+    }
+
+    /* Offers */
+
+    .grid-offers {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "cinque cinque newYork sanFrancisco"
+                             "cinque cinque pisa paris";
+    }
+
+    .img-grid {
+        margin: 0;
+    }
+
+    .cinque {grid-area: cinque;}
+    .newYork {grid-area: newYork;}
+    .sanFrancisco {grid-area: sanFrancisco;}
+    .pisa {grid-area: pisa;}
+    .paris {grid-area: paris;}
+
+
+    /* Explore */
+
+    .flex-explore {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .explore-element {
+        width: 49%;
+    }
+}
+
+@media (min-width: 1350px) {
+
+    .container-header {
+        width: 100%;
+    }
+
+    .main-content {
+        padding: 0 150px ;
+    }
+
+    footer {
+        padding: 0 150px;
+    }
+}
+    
+
+
+
+
+
